@@ -409,7 +409,7 @@ export default function App() {
               bio="Leading technical strategy and hardware integration for the DLSM system."
               accentColor={currentBlue}
               isLightMode={isAboutInView}
-              imgSrc="public/maxPortrait.png"
+              imgSrc="maxPortrait.png"
             />
             <TeamMember
               name="Benjamin Lu"
@@ -418,7 +418,7 @@ export default function App() {
               bio="Designing scalable data structures for real-time lunar inventory tracking."
               accentColor={currentBlue}
               isLightMode={isAboutInView}
-              imgSrc="public/benPortrait.png"
+              imgSrc="benPortrait.png"
             />
             <TeamMember
               name="Josue Collado"
@@ -427,7 +427,7 @@ export default function App() {
               bio="Optimizing hardware performance and RFID scanning latency."
               accentColor={currentBlue}
               isLightMode={isAboutInView}
-              imgSrc="public/joshPortrait.png"
+              imgSrc="joshPortrait.png"
             />
           </div>
         </div>
