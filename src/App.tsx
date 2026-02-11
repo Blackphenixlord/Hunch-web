@@ -466,8 +466,7 @@ export default function App() {
                 <p style={{ opacity: 0.8, lineHeight: 1.6 }}>
                   The high-level administrative dashboard. Operators can manage
                   the entire global inventory, track item history across
-                  modules, and generate logistics reports for NASA mission
-                  planning.
+                  modules, and flag discrepancies in shipping data.
                 </p>
               </div>
             </motion.div>
@@ -571,7 +570,7 @@ export default function App() {
               name="Max Moyle"
               role="Team Lead & Lead Programmer"
               icon={Layout}
-              bio="Leading technical strategy and hardware integration for the DLSM system."
+              bio="Leading technical strategy for the DLSM system."
               accentColor={currentAccent}
               isLightMode={isAboutInView}
               imgSrc="maxPortrait.png"
@@ -589,7 +588,7 @@ export default function App() {
               name="Josue Collado"
               role="Systems Lead"
               icon={Cpu}
-              bio="Optimizing hardware performance and RFID scanning latency."
+              bio="Leading hardware integration and optimization."
               accentColor={currentAccent}
               isLightMode={isAboutInView}
               imgSrc="joshPortrait.png"
@@ -672,8 +671,7 @@ export default function App() {
                     NVIDIA Jetson Orin Nano Super
                   </p>
                   <p style={{ opacity: 0.6, fontSize: "0.9rem" }}>
-                    Acting as the central intelligence hub for AI-driven
-                    logistics processing.
+                    Acting as the central intelligence hub for Project Aether.
                   </p>
                 </div>
 
@@ -693,8 +691,7 @@ export default function App() {
                     Raspberry Pi 5 Array
                   </p>
                   <p style={{ opacity: 0.6, fontSize: "0.9rem" }}>
-                    Handling localized data ingestion and module-specific
-                    control logic.
+                    Hosting the user-oriented frontend interface.
                   </p>
                 </div>
 
@@ -764,10 +761,18 @@ export default function App() {
                   justifyContent: "center",
                 }}
               >
-                <Cpu
-                  size={120}
-                  strokeWidth={1}
-                  style={{ color: currentAccent, opacity: 0.5 }}
+                <img
+                  src="jetsonNano.png"
+                  alt=""
+                  style={{
+                    width: "70%", // Smaller size
+                    height: "auto", // Aspect ratio preserved
+                    borderRadius: "24px", // Rounded corners
+                    objectFit: "contain",
+                    boxShadow: isAboutInView
+                      ? "0 20px 40px rgba(0,0,0,0.1)"
+                      : "0 20px 40px rgba(0,0,0,0.3)", // Adds a nice depth effect
+                  }}
                 />
                 {/* If you have a specific image, replace the Icon above with an <img> tag */}
               </div>
